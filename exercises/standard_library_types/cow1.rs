@@ -41,7 +41,6 @@ fn main() {
     match abs_all(&mut input) {
         // TODO
         Cow::Owned(_) => println!("I own this slice!"),
-        //Cow::Borrowed(_) => println!("I own this slice!"), // I can't make this work
-        _ => panic!("expected borrowed value"),
+        _ => panic!("expected owned value")
     }
 }
